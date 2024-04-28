@@ -1,0 +1,15 @@
+﻿<Page x:Class="WpfApp1.PrefightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="PrefightWindow" Height="210" Width="600">
+    <Grid>
+        <Label Content="Wybierz lokacje..." HorizontalAlignment="Left" Margin="170,30,0,0" VerticalAlignment="Top" FontSize="28"/>
+        <Button x:Name="yurtal" Content="Jurtal sp. z. o. o." HorizontalAlignment="Left" Margin="45,110,0,0" VerticalAlignment="Top" Width="120" FontSize="16" />
+        <Button x:Name="castle" Content="Zamek" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top" Width="120" FontSize="16" />
+        <Button x:Name="back" Content="Cofnij" HorizontalAlignment="Left" Margin="395,110,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Click="back_Click"/>
+    </Grid>
+</Page>

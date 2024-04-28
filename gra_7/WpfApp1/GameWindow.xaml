@@ -1,0 +1,113 @@
+﻿<Page
+    x:Class="WpfApp1.GameWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="GameWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Offset="0" Color="Black" />
+                <GradientStop Offset="1" Color="#FFF1A7A7" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Label
+            Grid.Column="1"
+            Width="222"
+            Margin="156,15,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FFCF9776"
+            Content="The Polish Fighter"
+            FontFamily="Comic Sans MS"
+            FontSize="24" />
+        <TextBox
+            x:Name="calendar"
+            Grid.Column="1"
+            Width="125"
+            Height="31"
+            Margin="204,77,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="23"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="comp"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,124,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="comp_Click"
+            Content="Starcia"
+            FontSize="22" />
+        <Button
+            x:Name="stat"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,170,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="stat_Click"
+            Content="Statystyki"
+            FontSize="22" />
+        <Button
+            x:Name="hold"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,216,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="hold_Click"
+            Content="Trening Siłowy"
+            FontSize="22" />
+        <Button
+            x:Name="run"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,262,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="run_Click"
+            Content="Trening Biegowy"
+            FontSize="20" />
+        <Button
+            x:Name="eat"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,308,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="eat_Click"
+            Content="Zjedz"
+            FontSize="22" />
+        <Button
+            x:Name="nextday"
+            Grid.Column="1"
+            Width="150"
+            Margin="192,356,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="nextday_Click"
+            Content="Zakończ Dzień"
+            FontSize="22" />
+        <Button
+            x:Name="back"
+            Grid.Column="1"
+            Width="75"
+            Margin="481,376,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="back_Click"
+            Content="Wróć" />
+    </Grid>
+</Page>

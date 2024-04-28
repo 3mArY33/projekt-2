@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="WpfApp1.PrecompWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="PrecompWindow"
+    Width="600"
+    Height="210"
+    mc:Ignorable="d">
+    <Grid>
+        <Label
+            Margin="150,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Wybierz konkurencje..."
+            FontSize="27" />
+        <Button
+            x:Name="fight"
+            Width="120"
+            Margin="45,110,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="fight_Click"
+            Content="Walcz"
+            FontSize="16" />
+        <Button
+            x:Name="running"
+            Width="120"
+            Margin="220,110,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Biegaj"
+            FontSize="16" />
+        <Button
+            x:Name="back"
+            Width="120"
+            Margin="395,110,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="back_Click"
+            Content="Cofnij"
+            FontSize="16" />
+    </Grid>
+</Page>
